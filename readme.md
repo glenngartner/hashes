@@ -1,5 +1,5 @@
 ## Custom Hash Algorithms
-An interactive console application implementing a custom has algorithm, comparing it to the C++ default.
+An interactive console application implementing a custom hash algorithm, comparing it to the C++ default.
 
 ### Dependencies
 Have cmake installed, and accessible in your path (ie: you should be able to launch cmake from your terminal).
