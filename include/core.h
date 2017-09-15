@@ -30,6 +30,10 @@ void fillOneDimensionalHash(std::vector<std::string> *simpleHash, int *stringSum
 void fillDeepHash(linkedListItem *item, std::vector<linkedListItem> *linkedListHash, std::string *key, std::string *value,
                   int *stringSum);
 
-bool isDeepArrayIndexOccuppied(std::vector<linkedListItem> *linkedListHash, int stringSum);
+bool deepArrayIndexIsOccupied(std::vector<linkedListItem> *linkedListHash, int stringSum);
+
+void printStar(int quantity);
+
+void printCharAsLine(char character, int quantity);
 
 #endif //HASHES_CORE_H
