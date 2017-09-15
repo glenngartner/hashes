@@ -9,13 +9,15 @@
 ../include/core.h
 string
 -
+vector
+-
 
-D:/workspace_local/cpp/hashes/include/core.cpp
+D:/workspace_local/cpp/hashes/src/core.cpp
 core.h
-D:/workspace_local/cpp/hashes/include/core.h
-
-D:/workspace_local/cpp/hashes/include/core.h
-string
+D:/workspace_local/cpp/hashes/src/core.h
+iostream
+-
+vector
 -
 
 D:/workspace_local/cpp/hashes/src/main.cpp

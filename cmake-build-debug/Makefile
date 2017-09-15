@@ -122,32 +122,32 @@ hashes/fast:
 	$(MAKE) -f CMakeFiles\hashes.dir\build.make CMakeFiles/hashes.dir/build
 .PHONY : hashes/fast
 
-include/core.obj: include/core.cpp.obj
+src/core.obj: src/core.cpp.obj
 
-.PHONY : include/core.obj
+.PHONY : src/core.obj
 
 # target to build an object file
-include/core.cpp.obj:
-	$(MAKE) -f CMakeFiles\hashes.dir\build.make CMakeFiles/hashes.dir/include/core.cpp.obj
-.PHONY : include/core.cpp.obj
+src/core.cpp.obj:
+	$(MAKE) -f CMakeFiles\hashes.dir\build.make CMakeFiles/hashes.dir/src/core.cpp.obj
+.PHONY : src/core.cpp.obj
 
-include/core.i: include/core.cpp.i
+src/core.i: src/core.cpp.i
 
-.PHONY : include/core.i
+.PHONY : src/core.i
 
 # target to preprocess a source file
-include/core.cpp.i:
-	$(MAKE) -f CMakeFiles\hashes.dir\build.make CMakeFiles/hashes.dir/include/core.cpp.i
-.PHONY : include/core.cpp.i
+src/core.cpp.i:
+	$(MAKE) -f CMakeFiles\hashes.dir\build.make CMakeFiles/hashes.dir/src/core.cpp.i
+.PHONY : src/core.cpp.i
 
-include/core.s: include/core.cpp.s
+src/core.s: src/core.cpp.s
 
-.PHONY : include/core.s
+.PHONY : src/core.s
 
 # target to generate assembly for a file
-include/core.cpp.s:
-	$(MAKE) -f CMakeFiles\hashes.dir\build.make CMakeFiles/hashes.dir/include/core.cpp.s
-.PHONY : include/core.cpp.s
+src/core.cpp.s:
+	$(MAKE) -f CMakeFiles\hashes.dir\build.make CMakeFiles/hashes.dir/src/core.cpp.s
+.PHONY : src/core.cpp.s
 
 src/main.obj: src/main.cpp.obj
 
@@ -185,9 +185,9 @@ help:
 	@echo ... rebuild_cache
 	@echo ... hashes
 	@echo ... edit_cache
-	@echo ... include/core.obj
-	@echo ... include/core.i
-	@echo ... include/core.s
+	@echo ... src/core.obj
+	@echo ... src/core.i
+	@echo ... src/core.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s
