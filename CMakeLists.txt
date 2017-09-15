@@ -3,5 +3,7 @@ project(hashes)
 
 set(CMAKE_CXX_STANDARD 14)
 
-set(SOURCE_FILES main.cpp)
+include_directories(${PROJECT_SOURCE_DIR}/include)
+
+set(SOURCE_FILES src/main.cpp include/core.cpp include/core.h)
 add_executable(hashes ${SOURCE_FILES})

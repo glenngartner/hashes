@@ -6,7 +6,29 @@
 
 #IncludeRegexTransform: 
 
-D:/workspace_local/cpp/hashes/main.cpp
+../include/core.h
+string
+-
+
+D:/workspace_local/cpp/hashes/include/core.cpp
+core.h
+D:/workspace_local/cpp/hashes/include/core.h
+
+D:/workspace_local/cpp/hashes/include/core.h
+string
+-
+
+D:/workspace_local/cpp/hashes/src/main.cpp
 iostream
 -
+unordered_map
+-
+string
+-
+cstring
+-
+vector
+-
+core.h
+D:/workspace_local/cpp/hashes/src/core.h
 

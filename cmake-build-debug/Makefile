@@ -122,32 +122,59 @@ hashes/fast:
 	$(MAKE) -f CMakeFiles\hashes.dir\build.make CMakeFiles/hashes.dir/build
 .PHONY : hashes/fast
 
-main.obj: main.cpp.obj
+include/core.obj: include/core.cpp.obj
 
-.PHONY : main.obj
+.PHONY : include/core.obj
 
 # target to build an object file
-main.cpp.obj:
-	$(MAKE) -f CMakeFiles\hashes.dir\build.make CMakeFiles/hashes.dir/main.cpp.obj
-.PHONY : main.cpp.obj
+include/core.cpp.obj:
+	$(MAKE) -f CMakeFiles\hashes.dir\build.make CMakeFiles/hashes.dir/include/core.cpp.obj
+.PHONY : include/core.cpp.obj
 
-main.i: main.cpp.i
+include/core.i: include/core.cpp.i
 
-.PHONY : main.i
+.PHONY : include/core.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles\hashes.dir\build.make CMakeFiles/hashes.dir/main.cpp.i
-.PHONY : main.cpp.i
+include/core.cpp.i:
+	$(MAKE) -f CMakeFiles\hashes.dir\build.make CMakeFiles/hashes.dir/include/core.cpp.i
+.PHONY : include/core.cpp.i
 
-main.s: main.cpp.s
+include/core.s: include/core.cpp.s
 
-.PHONY : main.s
+.PHONY : include/core.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles\hashes.dir\build.make CMakeFiles/hashes.dir/main.cpp.s
-.PHONY : main.cpp.s
+include/core.cpp.s:
+	$(MAKE) -f CMakeFiles\hashes.dir\build.make CMakeFiles/hashes.dir/include/core.cpp.s
+.PHONY : include/core.cpp.s
+
+src/main.obj: src/main.cpp.obj
+
+.PHONY : src/main.obj
+
+# target to build an object file
+src/main.cpp.obj:
+	$(MAKE) -f CMakeFiles\hashes.dir\build.make CMakeFiles/hashes.dir/src/main.cpp.obj
+.PHONY : src/main.cpp.obj
+
+src/main.i: src/main.cpp.i
+
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	$(MAKE) -f CMakeFiles\hashes.dir\build.make CMakeFiles/hashes.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	$(MAKE) -f CMakeFiles\hashes.dir\build.make CMakeFiles/hashes.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
 # Help Target
 help:
@@ -158,9 +185,12 @@ help:
 	@echo ... rebuild_cache
 	@echo ... hashes
 	@echo ... edit_cache
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... include/core.obj
+	@echo ... include/core.i
+	@echo ... include/core.s
+	@echo ... src/main.obj
+	@echo ... src/main.i
+	@echo ... src/main.s
 .PHONY : help
 
 
