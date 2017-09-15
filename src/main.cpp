@@ -11,34 +11,35 @@ int main() {
     std::string key;
     std::string value;
     std::vector<std::string> simpleHash;
+    std::vector<linkedListItem> linkedListHash;
 
     // main program loop
     while (run) {
+
+        // reset values for each loop
         int inputValue = 0;
         int stringSum = 0;
+
+        // prompt the user
         puts("What's the name of your key? ('x' to escape)");
         std::cin >> key;
-        if (key == "x") {
-            run = false;
-            break;
-        }
+
+        // evaluate the input
+        if (checkForProgramClose(&key, &run)) break;
         printCharsOfString(key, &inputValue, &stringSum, true);
 
+        // prompt the user for more input
         printf("What's the value?\n");
         std::cin >> value;
 
-        // resize the hash to match the largest index
+        // add linked list item to the deep hash
+        resizeForLargerIndexL(&linkedListHash, &stringSum);
+        linkedListItem item;
+        fillDeepHash(&item, &linkedListHash, &key, &value, &stringSum);
+
+        // add key and value to the one-dimensional hash
         resizeForLargerIndex(&simpleHash, &stringSum);
         fillOneDimensionalHash(&simpleHash, &stringSum, &value, true);
-//        // if the index is occupied, iterate +1 until it is empty (ie: go to the next one)
-//        while (!simpleHash[stringSum].empty()) {
-//            stringSum++;
-//            resizeForLargerIndex(&simpleHash, &stringSum);
-//        }
-//        // write the value to the new index in the array
-//        simpleHash[stringSum] = value;
-//        // print the new length of the array
-//        std::cout << "simpleHash size " << simpleHash.size() << std::endl;
     }
 
     exit(EXIT_SUCCESS);
