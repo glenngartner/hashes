@@ -64,8 +64,9 @@ bool checkForProgramClose(std::string *key, bool *run) {
 }
 
 void
-fillDeepHash(linkedListItem *item, std::vector<linkedListItem> *linkedListHash, std::string *key, std::string *value,
-             int *stringSum) {
+addToEmptyDeepArrayIndex(linkedListItem *item, std::vector<linkedListItem> *linkedListHash, std::string *key,
+                         std::string *value,
+                         int *stringSum) {
     (*item).key = *key;
     (*item).value = *value;
     (*linkedListHash)[(*stringSum)] = *item;
@@ -87,4 +88,17 @@ void printCharAsLine(char character, int quantity) {
         std::cout << character;
     }
     std::cout << std::endl;
+}
+
+void insertOrLinkIntoDeepArray(std::vector<linkedListItem> *linkedListHash, linkedListItem *item, int *stringSum,
+                               std::string *key, std::string *value) {
+    if (deepArrayIndexIsOccupied(linkedListHash, *stringSum)) {
+        printStar(3);
+        std::cout << "index " << *stringSum << " is empty. Filling" << std::endl;
+        addToEmptyDeepArrayIndex(item, linkedListHash, key, value, stringSum);
+    } else {
+        std::cout << "DEEPHASH: " << std::endl;
+        printStar(3);
+        std::cout << "index " << *stringSum << " is full. Linking to occupant." << std::endl;
+    }
 }

@@ -27,10 +27,14 @@ void resizeForLargerIndexL(std::vector<linkedListItem, std::allocator<linkedList
 void fillOneDimensionalHash(std::vector<std::string> *simpleHash, int *stringSum, std::string *value,
                             bool printHashSize);
 
-void fillDeepHash(linkedListItem *item, std::vector<linkedListItem> *linkedListHash, std::string *key, std::string *value,
-                  int *stringSum);
+void addToEmptyDeepArrayIndex(linkedListItem *item, std::vector<linkedListItem> *linkedListHash, std::string *key,
+                              std::string *value,
+                              int *stringSum);
 
 bool deepArrayIndexIsOccupied(std::vector<linkedListItem> *linkedListHash, int stringSum);
+
+void insertOrLinkIntoDeepArray(std::vector<linkedListItem> *linkedListHash, linkedListItem *item, int *stringSum,
+                               std::string *key, std::string *value);
 
 void printStar(int quantity);
 

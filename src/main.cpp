@@ -43,16 +43,15 @@ int main() {
         printCharAsLine('-', 45);
         resizeForLargerIndexL(&linkedListHash, &stringSum);
         linkedListItem item;
-        if (deepArrayIndexIsOccupied(&linkedListHash, stringSum)){
-            printStar(3);
-            std::cout << "index " << stringSum << " is empty. Filling" << std::endl;
-//            puts("deep index is empty. Filling.");
-        } else {
-            printStar(3);
-            std::cout << "index " << stringSum << " is full. Linking to occupant." << std::endl;
-            puts("deep index is full. Linking");
-        }
-        fillDeepHash(&item, &linkedListHash, &key, &value, &stringSum);
+        insertOrLinkIntoDeepArray(&linkedListHash, &item, &stringSum, &key, &value);
+//        if (deepArrayIndexIsOccupied(&linkedListHash, stringSum)) {
+//            printStar(3);
+//            std::cout << "index " << stringSum << " is empty. Filling" << std::endl;
+//            addToEmptyDeepArrayIndex(&item, &linkedListHash, &key, &value, &stringSum);
+//        } else {
+//            printStar(3);
+//            std::cout << "index " << stringSum << " is full. Linking to occupant." << std::endl;
+//        }
 
         // add key and value to the one-dimensional hash
         printCharAsLine('-', 45);
