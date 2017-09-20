@@ -106,21 +106,75 @@ CMakeFiles/hashes.dir/src/core.cpp.obj.provides: CMakeFiles/hashes.dir/src/core.
 CMakeFiles/hashes.dir/src/core.cpp.obj.provides.build: CMakeFiles/hashes.dir/src/core.cpp.obj
 
 
+CMakeFiles/hashes.dir/src/hash.cpp.obj: CMakeFiles/hashes.dir/flags.make
+CMakeFiles/hashes.dir/src/hash.cpp.obj: CMakeFiles/hashes.dir/includes_CXX.rsp
+CMakeFiles/hashes.dir/src/hash.cpp.obj: ../src/hash.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\workspace_local\cpp\hashes\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/hashes.dir/src/hash.cpp.obj"
+	C:\tools\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\hashes.dir\src\hash.cpp.obj -c D:\workspace_local\cpp\hashes\src\hash.cpp
+
+CMakeFiles/hashes.dir/src/hash.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hashes.dir/src/hash.cpp.i"
+	C:\tools\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\workspace_local\cpp\hashes\src\hash.cpp > CMakeFiles\hashes.dir\src\hash.cpp.i
+
+CMakeFiles/hashes.dir/src/hash.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hashes.dir/src/hash.cpp.s"
+	C:\tools\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\workspace_local\cpp\hashes\src\hash.cpp -o CMakeFiles\hashes.dir\src\hash.cpp.s
+
+CMakeFiles/hashes.dir/src/hash.cpp.obj.requires:
+
+.PHONY : CMakeFiles/hashes.dir/src/hash.cpp.obj.requires
+
+CMakeFiles/hashes.dir/src/hash.cpp.obj.provides: CMakeFiles/hashes.dir/src/hash.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\hashes.dir\build.make CMakeFiles/hashes.dir/src/hash.cpp.obj.provides.build
+.PHONY : CMakeFiles/hashes.dir/src/hash.cpp.obj.provides
+
+CMakeFiles/hashes.dir/src/hash.cpp.obj.provides.build: CMakeFiles/hashes.dir/src/hash.cpp.obj
+
+
+CMakeFiles/hashes.dir/src/deepHash.cpp.obj: CMakeFiles/hashes.dir/flags.make
+CMakeFiles/hashes.dir/src/deepHash.cpp.obj: CMakeFiles/hashes.dir/includes_CXX.rsp
+CMakeFiles/hashes.dir/src/deepHash.cpp.obj: ../src/deepHash.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\workspace_local\cpp\hashes\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/hashes.dir/src/deepHash.cpp.obj"
+	C:\tools\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\hashes.dir\src\deepHash.cpp.obj -c D:\workspace_local\cpp\hashes\src\deepHash.cpp
+
+CMakeFiles/hashes.dir/src/deepHash.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hashes.dir/src/deepHash.cpp.i"
+	C:\tools\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\workspace_local\cpp\hashes\src\deepHash.cpp > CMakeFiles\hashes.dir\src\deepHash.cpp.i
+
+CMakeFiles/hashes.dir/src/deepHash.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hashes.dir/src/deepHash.cpp.s"
+	C:\tools\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\workspace_local\cpp\hashes\src\deepHash.cpp -o CMakeFiles\hashes.dir\src\deepHash.cpp.s
+
+CMakeFiles/hashes.dir/src/deepHash.cpp.obj.requires:
+
+.PHONY : CMakeFiles/hashes.dir/src/deepHash.cpp.obj.requires
+
+CMakeFiles/hashes.dir/src/deepHash.cpp.obj.provides: CMakeFiles/hashes.dir/src/deepHash.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\hashes.dir\build.make CMakeFiles/hashes.dir/src/deepHash.cpp.obj.provides.build
+.PHONY : CMakeFiles/hashes.dir/src/deepHash.cpp.obj.provides
+
+CMakeFiles/hashes.dir/src/deepHash.cpp.obj.provides.build: CMakeFiles/hashes.dir/src/deepHash.cpp.obj
+
+
 # Object files for target hashes
 hashes_OBJECTS = \
 "CMakeFiles/hashes.dir/src/main.cpp.obj" \
-"CMakeFiles/hashes.dir/src/core.cpp.obj"
+"CMakeFiles/hashes.dir/src/core.cpp.obj" \
+"CMakeFiles/hashes.dir/src/hash.cpp.obj" \
+"CMakeFiles/hashes.dir/src/deepHash.cpp.obj"
 
 # External object files for target hashes
 hashes_EXTERNAL_OBJECTS =
 
 hashes.exe: CMakeFiles/hashes.dir/src/main.cpp.obj
 hashes.exe: CMakeFiles/hashes.dir/src/core.cpp.obj
+hashes.exe: CMakeFiles/hashes.dir/src/hash.cpp.obj
+hashes.exe: CMakeFiles/hashes.dir/src/deepHash.cpp.obj
 hashes.exe: CMakeFiles/hashes.dir/build.make
 hashes.exe: CMakeFiles/hashes.dir/linklibs.rsp
 hashes.exe: CMakeFiles/hashes.dir/objects1.rsp
 hashes.exe: CMakeFiles/hashes.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\workspace_local\cpp\hashes\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable hashes.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\workspace_local\cpp\hashes\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable hashes.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\hashes.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -130,6 +184,8 @@ CMakeFiles/hashes.dir/build: hashes.exe
 
 CMakeFiles/hashes.dir/requires: CMakeFiles/hashes.dir/src/main.cpp.obj.requires
 CMakeFiles/hashes.dir/requires: CMakeFiles/hashes.dir/src/core.cpp.obj.requires
+CMakeFiles/hashes.dir/requires: CMakeFiles/hashes.dir/src/hash.cpp.obj.requires
+CMakeFiles/hashes.dir/requires: CMakeFiles/hashes.dir/src/deepHash.cpp.obj.requires
 
 .PHONY : CMakeFiles/hashes.dir/requires
 

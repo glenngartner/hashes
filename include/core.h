@@ -36,6 +36,8 @@ bool deepArrayIndexIsOccupied(std::vector<linkedListItem> *linkedListHash, int s
 void insertOrLinkIntoDeepArray(std::vector<linkedListItem> *linkedListHash, linkedListItem *item, int *stringSum,
                                std::string *key, std::string *value);
 
+void linkItemToOccupant(linkedListItem* newItem, linkedListItem* occupant);
+
 void printStar(int quantity);
 
 void printCharAsLine(char character, int quantity);

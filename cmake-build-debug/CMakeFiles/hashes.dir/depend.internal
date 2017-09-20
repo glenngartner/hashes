@@ -4,6 +4,17 @@
 CMakeFiles/hashes.dir/src/core.cpp.obj
  ../include/core.h
  D:/workspace_local/cpp/hashes/src/core.cpp
+CMakeFiles/hashes.dir/src/deepHash.cpp.obj
+ ../include/core.h
+ ../include/hash.h
+ D:/workspace_local/cpp/hashes/src/deepHash.cpp
+ D:/workspace_local/cpp/hashes/src/deepHash.h
+CMakeFiles/hashes.dir/src/hash.cpp.obj
+ ../include/core.h
+ ../include/hash.h
+ D:/workspace_local/cpp/hashes/src/hash.cpp
 CMakeFiles/hashes.dir/src/main.cpp.obj
  ../include/core.h
+ ../include/hash.h
+ D:/workspace_local/cpp/hashes/src/deepHash.h
  D:/workspace_local/cpp/hashes/src/main.cpp

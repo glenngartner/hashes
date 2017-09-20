@@ -4,6 +4,17 @@
 CMakeFiles/hashes.dir/src/core.cpp.obj: ../include/core.h
 CMakeFiles/hashes.dir/src/core.cpp.obj: ../src/core.cpp
 
+CMakeFiles/hashes.dir/src/deepHash.cpp.obj: ../include/core.h
+CMakeFiles/hashes.dir/src/deepHash.cpp.obj: ../include/hash.h
+CMakeFiles/hashes.dir/src/deepHash.cpp.obj: ../src/deepHash.cpp
+CMakeFiles/hashes.dir/src/deepHash.cpp.obj: ../src/deepHash.h
+
+CMakeFiles/hashes.dir/src/hash.cpp.obj: ../include/core.h
+CMakeFiles/hashes.dir/src/hash.cpp.obj: ../include/hash.h
+CMakeFiles/hashes.dir/src/hash.cpp.obj: ../src/hash.cpp
+
 CMakeFiles/hashes.dir/src/main.cpp.obj: ../include/core.h
+CMakeFiles/hashes.dir/src/main.cpp.obj: ../include/hash.h
+CMakeFiles/hashes.dir/src/main.cpp.obj: ../src/deepHash.h
 CMakeFiles/hashes.dir/src/main.cpp.obj: ../src/main.cpp
 

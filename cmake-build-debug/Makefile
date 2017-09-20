@@ -149,6 +149,60 @@ src/core.cpp.s:
 	$(MAKE) -f CMakeFiles\hashes.dir\build.make CMakeFiles/hashes.dir/src/core.cpp.s
 .PHONY : src/core.cpp.s
 
+src/deepHash.obj: src/deepHash.cpp.obj
+
+.PHONY : src/deepHash.obj
+
+# target to build an object file
+src/deepHash.cpp.obj:
+	$(MAKE) -f CMakeFiles\hashes.dir\build.make CMakeFiles/hashes.dir/src/deepHash.cpp.obj
+.PHONY : src/deepHash.cpp.obj
+
+src/deepHash.i: src/deepHash.cpp.i
+
+.PHONY : src/deepHash.i
+
+# target to preprocess a source file
+src/deepHash.cpp.i:
+	$(MAKE) -f CMakeFiles\hashes.dir\build.make CMakeFiles/hashes.dir/src/deepHash.cpp.i
+.PHONY : src/deepHash.cpp.i
+
+src/deepHash.s: src/deepHash.cpp.s
+
+.PHONY : src/deepHash.s
+
+# target to generate assembly for a file
+src/deepHash.cpp.s:
+	$(MAKE) -f CMakeFiles\hashes.dir\build.make CMakeFiles/hashes.dir/src/deepHash.cpp.s
+.PHONY : src/deepHash.cpp.s
+
+src/hash.obj: src/hash.cpp.obj
+
+.PHONY : src/hash.obj
+
+# target to build an object file
+src/hash.cpp.obj:
+	$(MAKE) -f CMakeFiles\hashes.dir\build.make CMakeFiles/hashes.dir/src/hash.cpp.obj
+.PHONY : src/hash.cpp.obj
+
+src/hash.i: src/hash.cpp.i
+
+.PHONY : src/hash.i
+
+# target to preprocess a source file
+src/hash.cpp.i:
+	$(MAKE) -f CMakeFiles\hashes.dir\build.make CMakeFiles/hashes.dir/src/hash.cpp.i
+.PHONY : src/hash.cpp.i
+
+src/hash.s: src/hash.cpp.s
+
+.PHONY : src/hash.s
+
+# target to generate assembly for a file
+src/hash.cpp.s:
+	$(MAKE) -f CMakeFiles\hashes.dir\build.make CMakeFiles/hashes.dir/src/hash.cpp.s
+.PHONY : src/hash.cpp.s
+
 src/main.obj: src/main.cpp.obj
 
 .PHONY : src/main.obj
@@ -188,6 +242,12 @@ help:
 	@echo ... src/core.obj
 	@echo ... src/core.i
 	@echo ... src/core.s
+	@echo ... src/deepHash.obj
+	@echo ... src/deepHash.i
+	@echo ... src/deepHash.s
+	@echo ... src/hash.obj
+	@echo ... src/hash.i
+	@echo ... src/hash.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s

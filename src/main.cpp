@@ -4,6 +4,8 @@
 #include <cstring>
 #include <vector>
 #include "core.h"
+#include "hash.h"
+#include "deepHash.h"
 
 int main() {
 
@@ -12,6 +14,7 @@ int main() {
     std::string value;
     std::vector<std::string> simpleHash;
     std::vector<linkedListItem> linkedListHash;
+    deepHash newDeepHash{15};
 
     // main program loop
     while (run) {
@@ -41,17 +44,10 @@ int main() {
 
         // add linked list item to the deep hash
         printCharAsLine('-', 45);
+//        resizeForLargerIndex<std::string, linkedListItem>(&linkedListHash, &stringSum);
         resizeForLargerIndexL(&linkedListHash, &stringSum);
-        linkedListItem item;
+        linkedListItem item; // create an empty linked list item
         insertOrLinkIntoDeepArray(&linkedListHash, &item, &stringSum, &key, &value);
-//        if (deepArrayIndexIsOccupied(&linkedListHash, stringSum)) {
-//            printStar(3);
-//            std::cout << "index " << stringSum << " is empty. Filling" << std::endl;
-//            addToEmptyDeepArrayIndex(&item, &linkedListHash, &key, &value, &stringSum);
-//        } else {
-//            printStar(3);
-//            std::cout << "index " << stringSum << " is full. Linking to occupant." << std::endl;
-//        }
 
         // add key and value to the one-dimensional hash
         printCharAsLine('-', 45);

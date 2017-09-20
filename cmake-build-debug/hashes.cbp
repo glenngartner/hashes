@@ -85,7 +85,19 @@
 		<Unit filename="D:/workspace_local/cpp/hashes/include/core.h">
 			<Option target="hashes"/>
 		</Unit>
+		<Unit filename="D:/workspace_local/cpp/hashes/include/hash.h">
+			<Option target="hashes"/>
+		</Unit>
 		<Unit filename="D:/workspace_local/cpp/hashes/src/core.cpp">
+			<Option target="hashes"/>
+		</Unit>
+		<Unit filename="D:/workspace_local/cpp/hashes/src/deepHash.cpp">
+			<Option target="hashes"/>
+		</Unit>
+		<Unit filename="D:/workspace_local/cpp/hashes/src/deepHash.h">
+			<Option target="hashes"/>
+		</Unit>
+		<Unit filename="D:/workspace_local/cpp/hashes/src/hash.cpp">
 			<Option target="hashes"/>
 		</Unit>
 		<Unit filename="D:/workspace_local/cpp/hashes/src/main.cpp">

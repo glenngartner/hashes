@@ -5,6 +5,7 @@
 #include "core.h"
 #include <iostream>
 #include <vector>
+#include <string>
 
 void printCharsOfString(std::string key, int *inputValue, int *stringSum, bool printSum) {
     int i = 0;
@@ -100,5 +101,14 @@ void insertOrLinkIntoDeepArray(std::vector<linkedListItem> *linkedListHash, link
         std::cout << "DEEPHASH: " << std::endl;
         printStar(3);
         std::cout << "index " << *stringSum << " is full. Linking to occupant." << std::endl;
+        linkedListItem occupant = (*linkedListHash)[(*stringSum)];
+        item->key = *key;
+        item->value = *value;
+        linkItemToOccupant(item, &occupant);
+        std::cout << "occupant " << occupant.key << " is now linked to " << occupant.next->key << std::endl;
     }
+}
+
+void linkItemToOccupant(linkedListItem* newItem, linkedListItem* occupant) {
+    occupant->next = newItem;
 }

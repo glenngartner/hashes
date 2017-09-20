@@ -12,6 +12,14 @@ string
 vector
 -
 
+../include/hash.h
+iostream
+-
+vector
+-
+core.h
+../include/core.h
+
 D:/workspace_local/cpp/hashes/src/core.cpp
 core.h
 D:/workspace_local/cpp/hashes/src/core.h
@@ -19,6 +27,22 @@ iostream
 -
 vector
 -
+string
+-
+
+D:/workspace_local/cpp/hashes/src/deepHash.cpp
+deepHash.h
+D:/workspace_local/cpp/hashes/src/deepHash.h
+
+D:/workspace_local/cpp/hashes/src/deepHash.h
+hash.h
+D:/workspace_local/cpp/hashes/src/hash.h
+core.h
+D:/workspace_local/cpp/hashes/src/core.h
+
+D:/workspace_local/cpp/hashes/src/hash.cpp
+hash.h
+D:/workspace_local/cpp/hashes/src/hash.h
 
 D:/workspace_local/cpp/hashes/src/main.cpp
 iostream
@@ -33,4 +57,8 @@ vector
 -
 core.h
 D:/workspace_local/cpp/hashes/src/core.h
+hash.h
+D:/workspace_local/cpp/hashes/src/hash.h
+deepHash.h
+D:/workspace_local/cpp/hashes/src/deepHash.h
 

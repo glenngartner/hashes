@@ -65,7 +65,7 @@ CMAKE_BINARY_DIR = D:\workspace_local\cpp\hashes\cmake-build-debug
 CMakeFiles/hashes.dir/all:
 	$(MAKE) -f CMakeFiles\hashes.dir\build.make CMakeFiles/hashes.dir/depend
 	$(MAKE) -f CMakeFiles\hashes.dir\build.make CMakeFiles/hashes.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\workspace_local\cpp\hashes\cmake-build-debug\CMakeFiles --progress-num=1,2,3 "Built target hashes"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\workspace_local\cpp\hashes\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5 "Built target hashes"
 .PHONY : CMakeFiles/hashes.dir/all
 
 # Include target in all.
@@ -75,7 +75,7 @@ all: CMakeFiles/hashes.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/hashes.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\workspace_local\cpp\hashes\cmake-build-debug\CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\workspace_local\cpp\hashes\cmake-build-debug\CMakeFiles 5
 	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/hashes.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\workspace_local\cpp\hashes\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/hashes.dir/rule
