@@ -12,10 +12,10 @@
 class hash {
 public:
     hash(int size);
-    std::vector<int> array;
+
     void resizeForLargerIndex(int *index);
 
-private:
+    std::vector<int> array;
 };
 
 

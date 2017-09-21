@@ -9,9 +9,9 @@
 #define HASHES_CORE_H
 
 struct linkedListItem {
-    std::string key;
-    std::string value;
-    linkedListItem *next;
+    std::string key = "";
+    std::string value = "";
+    linkedListItem *next = nullptr;
 };
 
 bool checkForProgramClose(std::string *key, bool *run);

@@ -14,4 +14,3 @@ void hash::resizeForLargerIndex(int *index) {
     }
     std::cout << "HASH::Expanded Size to << " << this->array.size() << std::endl;
 }
-

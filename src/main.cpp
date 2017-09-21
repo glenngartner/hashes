@@ -14,7 +14,7 @@ int main() {
     std::string value;
     std::vector<std::string> simpleHash;
     std::vector<linkedListItem> linkedListHash;
-    deepHash newDeepHash{15};
+    deepHash linkedHash{15};
 
     // main program loop
     while (run) {
@@ -44,10 +44,11 @@ int main() {
 
         // add linked list item to the deep hash
         printCharAsLine('-', 45);
-//        resizeForLargerIndex<std::string, linkedListItem>(&linkedListHash, &stringSum);
-        resizeForLargerIndexL(&linkedListHash, &stringSum);
-        linkedListItem item; // create an empty linked list item
-        insertOrLinkIntoDeepArray(&linkedListHash, &item, &stringSum, &key, &value);
+        linkedHash.resizeForLargerIndex(&stringSum);
+//        resizeForLargerIndexL(&linkedListHash, &stringSum);
+        linkedListItem *item = new linkedListItem; // create an empty linked list item
+        linkedHash.insertOrLink(item, &stringSum, &key, &value);
+//        insertOrLinkIntoDeepArray(&linkedListHash, &item, &stringSum, &key, &value);
 
         // add key and value to the one-dimensional hash
         printCharAsLine('-', 45);

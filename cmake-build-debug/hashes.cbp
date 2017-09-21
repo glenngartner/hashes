@@ -88,6 +88,9 @@
 		<Unit filename="D:/workspace_local/cpp/hashes/include/hash.h">
 			<Option target="hashes"/>
 		</Unit>
+		<Unit filename="D:/workspace_local/cpp/hashes/include/linkedListItem.h">
+			<Option target="hashes"/>
+		</Unit>
 		<Unit filename="D:/workspace_local/cpp/hashes/src/core.cpp">
 			<Option target="hashes"/>
 		</Unit>
@@ -98,6 +101,9 @@
 			<Option target="hashes"/>
 		</Unit>
 		<Unit filename="D:/workspace_local/cpp/hashes/src/hash.cpp">
+			<Option target="hashes"/>
+		</Unit>
+		<Unit filename="D:/workspace_local/cpp/hashes/src/linkedListItem.cpp">
 			<Option target="hashes"/>
 		</Unit>
 		<Unit filename="D:/workspace_local/cpp/hashes/src/main.cpp">

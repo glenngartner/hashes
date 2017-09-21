@@ -203,6 +203,33 @@ src/hash.cpp.s:
 	$(MAKE) -f CMakeFiles\hashes.dir\build.make CMakeFiles/hashes.dir/src/hash.cpp.s
 .PHONY : src/hash.cpp.s
 
+src/linkedListItem.obj: src/linkedListItem.cpp.obj
+
+.PHONY : src/linkedListItem.obj
+
+# target to build an object file
+src/linkedListItem.cpp.obj:
+	$(MAKE) -f CMakeFiles\hashes.dir\build.make CMakeFiles/hashes.dir/src/linkedListItem.cpp.obj
+.PHONY : src/linkedListItem.cpp.obj
+
+src/linkedListItem.i: src/linkedListItem.cpp.i
+
+.PHONY : src/linkedListItem.i
+
+# target to preprocess a source file
+src/linkedListItem.cpp.i:
+	$(MAKE) -f CMakeFiles\hashes.dir\build.make CMakeFiles/hashes.dir/src/linkedListItem.cpp.i
+.PHONY : src/linkedListItem.cpp.i
+
+src/linkedListItem.s: src/linkedListItem.cpp.s
+
+.PHONY : src/linkedListItem.s
+
+# target to generate assembly for a file
+src/linkedListItem.cpp.s:
+	$(MAKE) -f CMakeFiles\hashes.dir\build.make CMakeFiles/hashes.dir/src/linkedListItem.cpp.s
+.PHONY : src/linkedListItem.cpp.s
+
 src/main.obj: src/main.cpp.obj
 
 .PHONY : src/main.obj
@@ -248,6 +275,9 @@ help:
 	@echo ... src/hash.obj
 	@echo ... src/hash.i
 	@echo ... src/hash.s
+	@echo ... src/linkedListItem.obj
+	@echo ... src/linkedListItem.i
+	@echo ... src/linkedListItem.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s

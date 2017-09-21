@@ -9,14 +9,18 @@
 #define HASHES_DEEPHASH_H
 
 
-class deepHash : public hash {
+class deepHash {
 public:
     deepHash(int size);
-    std::vector<linkedListItem> array;
     bool indexIsOccupied(int index);
+    void resizeForLargerIndex(int *index);
     void insertOrLink(linkedListItem *item, int *index, std::string *key, std::string *value);
     void addToEmptyIndex(linkedListItem *item, std::string *key, std::string *value, int *index);
     void linkItemToOccupant(linkedListItem *item, linkedListItem *occupant);
+    linkedListItem * findLastInLinkedList(linkedListItem *item);
+
+private:
+    std::vector<linkedListItem> array;
 };
 
 

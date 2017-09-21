@@ -13,6 +13,9 @@ CMakeFiles/hashes.dir/src/hash.cpp.obj: ../include/core.h
 CMakeFiles/hashes.dir/src/hash.cpp.obj: ../include/hash.h
 CMakeFiles/hashes.dir/src/hash.cpp.obj: ../src/hash.cpp
 
+CMakeFiles/hashes.dir/src/linkedListItem.cpp.obj: ../include/linkedListItem.h
+CMakeFiles/hashes.dir/src/linkedListItem.cpp.obj: ../src/linkedListItem.cpp
+
 CMakeFiles/hashes.dir/src/main.cpp.obj: ../include/core.h
 CMakeFiles/hashes.dir/src/main.cpp.obj: ../include/hash.h
 CMakeFiles/hashes.dir/src/main.cpp.obj: ../src/deepHash.h
