@@ -13,9 +13,6 @@ CMakeFiles/hashes.dir/src/hash.cpp.obj
  ../include/core.h
  ../include/hash.h
  D:/workspace_local/cpp/hashes/src/hash.cpp
-CMakeFiles/hashes.dir/src/linkedListItem.cpp.obj
- ../include/linkedListItem.h
- D:/workspace_local/cpp/hashes/src/linkedListItem.cpp
 CMakeFiles/hashes.dir/src/main.cpp.obj
  ../include/core.h
  ../include/hash.h

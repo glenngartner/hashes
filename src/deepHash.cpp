@@ -3,6 +3,7 @@
 //
 
 #include "deepHash.h"
+#include "core.h"
 
 deepHash::deepHash(int size) {
     this->array = std::vector<linkedListItem>(size);
@@ -49,10 +50,39 @@ void deepHash::resizeForLargerIndex(int *index) {
     std::cout << "HASH::Expanded Size to << " << this->array.size() << std::endl;
 }
 
-linkedListItem * deepHash::findLastInLinkedList(linkedListItem *item) {
+linkedListItem *deepHash::findLastInLinkedList(linkedListItem *item) {
     linkedListItem *tempItem = item;
-    while (tempItem->next != nullptr){
+    while (tempItem->next != nullptr) {
         tempItem = tempItem->next;
     }
     return tempItem;
+}
+
+int deepHash::sumOfString(std::string key) {
+    int stringSum = 0;
+    int charValue = 0;
+    int i = 0;
+    while (key[i] != '\0') {
+        charValue = (int) (char) key[i];
+        stringSum += charValue;
+        i++;
+    }
+    return stringSum;
+}
+
+linkedListItem *deepHash::findAtIndex(int index) {
+   return &this->array[index];
+}
+
+linkedListItem *deepHash::findItemWithValue(int index, std::string value) {
+    linkedListItem *item = deepHash::findAtIndex(index);
+    while (item->value != value){
+        item = item->next;
+    }
+    return item;
+}
+
+linkedListItem *deepHash::returnItem(std::string *key, std::string *value) {
+    int sum = deepHash::sumOfString(*key);
+    return deepHash::findItemWithValue(sum, *value);
 }

@@ -49,6 +49,7 @@ int main() {
         linkedListItem *item = new linkedListItem; // create an empty linked list item
         linkedHash.insertOrLink(item, &stringSum, &key, &value);
 //        insertOrLinkIntoDeepArray(&linkedListHash, &item, &stringSum, &key, &value);
+        linkedListItem *itemWithValue = linkedHash.returnItem(&key, &value);
 
         // add key and value to the one-dimensional hash
         printCharAsLine('-', 45);

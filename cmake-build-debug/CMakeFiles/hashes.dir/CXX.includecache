@@ -20,10 +20,6 @@ vector
 core.h
 ../include/core.h
 
-../include/linkedListItem.h
-string
--
-
 D:/workspace_local/cpp/hashes/src/core.cpp
 core.h
 D:/workspace_local/cpp/hashes/src/core.h
@@ -37,6 +33,8 @@ string
 D:/workspace_local/cpp/hashes/src/deepHash.cpp
 deepHash.h
 D:/workspace_local/cpp/hashes/src/deepHash.h
+core.h
+D:/workspace_local/cpp/hashes/src/core.h
 
 D:/workspace_local/cpp/hashes/src/deepHash.h
 hash.h
@@ -47,10 +45,6 @@ D:/workspace_local/cpp/hashes/src/core.h
 D:/workspace_local/cpp/hashes/src/hash.cpp
 hash.h
 D:/workspace_local/cpp/hashes/src/hash.h
-
-D:/workspace_local/cpp/hashes/src/linkedListItem.cpp
-linkedListItem.h
-D:/workspace_local/cpp/hashes/src/linkedListItem.h
 
 D:/workspace_local/cpp/hashes/src/main.cpp
 iostream
