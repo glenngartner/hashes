@@ -29,10 +29,14 @@ public:
 
     int calcIndex(int stringSum);
 
-private:
-    std::vector<linkedListItem*> array;
+    void resize();
 
-    std::vector<linkedListItem> arrayFlatCopy;
+    int getDepthOfIndex(int index);
+
+private:
+    std::vector<linkedListItem *> array;
+
+    std::vector<linkedListItem *> arrayFlatCopy;
 
     std::vector<int> occupiedIndices;
 
@@ -42,9 +46,10 @@ private:
 
     linkedListItem *findItemWithValue(int index, std::string value);
 
+    void transferArrayToCopy();
+
     bool checkToResize();
 
-    bool resize();
 };
 
 

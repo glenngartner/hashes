@@ -50,6 +50,9 @@ int main() {
         linkedHash.insertOrLink(item, &stringSum, &key, &value);
 //        insertOrLinkIntoDeepArray(&linkedListHash, &item, &stringSum, &key, &value);
         linkedListItem *itemWithValue = linkedHash.returnItem(&key, &value);
+        if (linkedHash.getDepthOfIndex(5) > 3) {
+            linkedHash.resize();
+        }
 
         // add key and value to the one-dimensional hash
         printCharAsLine('-', 45);

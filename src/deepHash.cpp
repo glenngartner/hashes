@@ -6,7 +6,8 @@
 #include "core.h"
 
 deepHash::deepHash(int size) {
-    this->array = std::vector<linkedListItem*>(size);
+    this->array = std::vector<linkedListItem *>(size);
+    this->arrayFlatCopy = {};
     this->occupiedIndices = {};
 }
 
@@ -97,16 +98,60 @@ int deepHash::calcIndex(int stringSum) {
     return (stringSum % size);
 }
 
-bool deepHash::resize() {
-    bool didResize = false;
-    // copy contents into arrayCopy
-    // null the array
+void deepHash::resize() {
+    deepHash::transferArrayToCopy();
     // resize the array
     // place contents back into new Array
-    return didResize;
 }
 
 bool deepHash::checkToResize() {
 
     return false;
+}
+
+int deepHash::getDepthOfIndex(int index) {
+    int i = 0;
+    // start at the index passed-in
+    // if this index is occupied
+    if (this->array[index] != nullptr) {
+        // give me a count of 1 for making it this far
+        i++;
+        // store a reference to the next item for this item
+        linkedListItem *nextItem = this->array[index]->next;
+        // if the next item exists
+        while (nextItem != nullptr) {
+            // count up for each time it's not empty
+            i++;
+            // over-write the next item reference, and continue down the chain
+            nextItem = nextItem->next;
+        }
+    }
+    return i;
+}
+
+void deepHash::transferArrayToCopy() {
+    // search through each index of this->array
+    this->arrayFlatCopy = {};
+    for (int i = 0; i < this->array.size(); i++) {
+        // for every index that's occupied
+        if (this->array[i] != nullptr) {
+            // copy the contents of the first item into the copy array
+            this->arrayFlatCopy.push_back(this->array[i]);
+            // while there's a "next" item referenced (it's not null)
+            linkedListItem *nextItem = this->array[i]->next;
+            while (nextItem != nullptr) {
+                // dig down, and copy every next item into the copy array
+                linkedListItem *holdNextItem = nextItem->next;
+                // clear the next reference to your neighbor, since this is an artifact of the previous hash size
+                nextItem->next = nullptr;
+                this->arrayFlatCopy.push_back(nextItem);
+                // set the next item to be the next of next :)
+                nextItem = holdNextItem;
+            }
+            // clear the next reference for the current index
+            this->array[i]->next = nullptr;
+        }
+    }
+    this->array = {};
+    // null the array
 }
