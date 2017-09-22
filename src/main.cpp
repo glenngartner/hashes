@@ -14,7 +14,7 @@ int main() {
     std::string value;
     std::vector<std::string> simpleHash;
     std::vector<linkedListItem> linkedListHash;
-    deepHash linkedHash{15};
+    deepHash linkedHash{10};
 
     // main program loop
     while (run) {
@@ -29,7 +29,7 @@ int main() {
 
         // evaluate the input
         if (checkForProgramClose(&key, &run)) break;
-        printCharsOfString(key, &inputValue, &stringSum, true);
+        printCharsOfString(key, &inputValue, &stringSum, false);
 
         // prompt the user for more input
         printf("What's the value?\n");
@@ -44,9 +44,11 @@ int main() {
 
         // add linked list item to the deep hash
         printCharAsLine('-', 45);
+        stringSum = linkedHash.calcIndex(stringSum);
+
         linkedHash.resizeForLargerIndex(&stringSum);
 //        resizeForLargerIndexL(&linkedListHash, &stringSum);
-        linkedListItem *item = new linkedListItem; // create an empty linked list item
+        auto *item = new linkedListItem; // create an empty linked list item
         linkedHash.insertOrLink(item, &stringSum, &key, &value);
 //        insertOrLinkIntoDeepArray(&linkedListHash, &item, &stringSum, &key, &value);
         linkedListItem *itemWithValue = linkedHash.returnItem(&key, &value);

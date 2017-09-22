@@ -7,6 +7,7 @@
 
 deepHash::deepHash(int size) {
     this->array = std::vector<linkedListItem>(size);
+    this->occupiedIndices = {};
 }
 
 bool deepHash::indexIsOccupied(int index) {
@@ -22,11 +23,13 @@ void deepHash::insertOrLink(linkedListItem *item, int *index, std::string *key, 
         item->key = *key;
         item->value = *value;
         deepHash::linkItemToOccupant(item, occupant);
-        std::cout << "occupant " << occupant->key << " is now linked to " << occupant->next->key << std::endl;
+        std::cout << "occupant " << occupant->key << "-" << occupant->value << " is now linked to "
+                  << occupant->next->key << "-" << occupant->next->value << std::endl;
     } else {
         printStar(3);
         std::cout << "index " << *index << " is empty. Filling" << std::endl;
         deepHash::addToEmptyIndex(item, key, value, index);
+        this->occupiedIndices.push_back(*index);
     }
 
 }
@@ -46,8 +49,8 @@ void deepHash::linkItemToOccupant(linkedListItem *item, linkedListItem *occupant
 void deepHash::resizeForLargerIndex(int *index) {
     if (this->array.size() <= *index) {
         this->array.resize(*index + 1);
+        std::cout << "HASH::Expanded Size to << " << this->array.size() << std::endl;
     }
-    std::cout << "HASH::Expanded Size to << " << this->array.size() << std::endl;
 }
 
 linkedListItem *deepHash::findLastInLinkedList(linkedListItem *item) {
@@ -71,12 +74,12 @@ int deepHash::sumOfString(std::string key) {
 }
 
 linkedListItem *deepHash::findAtIndex(int index) {
-   return &this->array[index];
+    return &this->array[index];
 }
 
 linkedListItem *deepHash::findItemWithValue(int index, std::string value) {
     linkedListItem *item = deepHash::findAtIndex(index);
-    while (item->value != value){
+    while (item->value != value) {
         item = item->next;
     }
     return item;
@@ -84,5 +87,11 @@ linkedListItem *deepHash::findItemWithValue(int index, std::string value) {
 
 linkedListItem *deepHash::returnItem(std::string *key, std::string *value) {
     int sum = deepHash::sumOfString(*key);
-    return deepHash::findItemWithValue(sum, *value);
+    int index = deepHash::calcIndex(sum);
+    return deepHash::findItemWithValue(index, *value);
+}
+
+int deepHash::calcIndex(int stringSum) {
+    int size = this->array.size();
+    return (stringSum % size);
 }

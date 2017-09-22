@@ -25,11 +25,16 @@ public:
 
     linkedListItem *findLastInLinkedList(linkedListItem *item);
 
-
     linkedListItem *returnItem(std::string *key, std::string *value);
+
+    int calcIndex(int stringSum);
 
 private:
     std::vector<linkedListItem> array;
+
+    std::vector<linkedListItem> arrayFlatCopy;
+
+    std::vector<int> occupiedIndices;
 
     int sumOfString(std::string key);
 
