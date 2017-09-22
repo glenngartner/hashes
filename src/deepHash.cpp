@@ -19,7 +19,6 @@ bool deepHash::indexIsOccupied(int index) {
 void deepHash::insertOrLink(linkedListItem *item, int *index, std::string *key, std::string *value) {
     if (deepHash::indexIsOccupied(*index)) {
         std::cout << "DEEPHASH: " << std::endl;
-        printStar(3);
         std::cout << "index " << *index << " is full. Linking to occupant." << std::endl;
         linkedListItem *occupant = deepHash::findLastInLinkedList((this->array)[(*index)]);
         item->key = *key;
@@ -28,7 +27,7 @@ void deepHash::insertOrLink(linkedListItem *item, int *index, std::string *key, 
         std::cout << "occupant " << occupant->key << "-" << occupant->value << " is now linked to "
                   << occupant->next->key << "-" << occupant->next->value << std::endl;
     } else {
-        printStar(3);
+        std::cout << "DEEPHASH: " << std::endl;
         std::cout << "index " << *index << " is empty. Filling" << std::endl;
         deepHash::addToEmptyIndex(item, key, value, index);
         this->occupiedIndices.push_back(*index);

@@ -33,12 +33,13 @@ public:
 
     int getDepthOfIndex(int index);
 
-private:
     std::vector<linkedListItem *> array;
+
+    std::vector<int> occupiedIndices;
+private:
 
     std::vector<linkedListItem *> arrayFlatCopy;
 
-    std::vector<int> occupiedIndices;
 
     int sumOfString(std::string key);
 
