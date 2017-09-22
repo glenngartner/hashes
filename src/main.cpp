@@ -14,7 +14,7 @@ int main() {
     std::string value;
     std::vector<std::string> simpleHash;
     std::vector<linkedListItem> linkedListHash;
-    deepHash linkedHash{10};
+    deepHash linkedHash{11};
 
     // main program loop
     while (run) {
@@ -38,8 +38,6 @@ int main() {
         // show the user what you're entering
         puts("");
         std::cout << "ADDING: [\"" << key << "\"] = \"" << value << "\"" << std::endl;
-        printStar(2);
-        std::cout << "Trying at index: " << stringSum << std::endl;
         puts("");
 
         // add linked list item to the deep hash

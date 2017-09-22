@@ -30,7 +30,7 @@ public:
     int calcIndex(int stringSum);
 
 private:
-    std::vector<linkedListItem> array;
+    std::vector<linkedListItem*> array;
 
     std::vector<linkedListItem> arrayFlatCopy;
 
@@ -41,6 +41,10 @@ private:
     linkedListItem *findAtIndex(int index);
 
     linkedListItem *findItemWithValue(int index, std::string value);
+
+    bool checkToResize();
+
+    bool resize();
 };
 
 

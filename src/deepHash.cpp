@@ -6,12 +6,13 @@
 #include "core.h"
 
 deepHash::deepHash(int size) {
-    this->array = std::vector<linkedListItem>(size);
+    this->array = std::vector<linkedListItem*>(size);
     this->occupiedIndices = {};
 }
 
 bool deepHash::indexIsOccupied(int index) {
-    return (this->array[index].value != "");
+//    return (this->array[index]->value != "");
+    return (this->array[index] != nullptr);
 }
 
 void deepHash::insertOrLink(linkedListItem *item, int *index, std::string *key, std::string *value) {
@@ -19,7 +20,7 @@ void deepHash::insertOrLink(linkedListItem *item, int *index, std::string *key, 
         std::cout << "DEEPHASH: " << std::endl;
         printStar(3);
         std::cout << "index " << *index << " is full. Linking to occupant." << std::endl;
-        linkedListItem *occupant = deepHash::findLastInLinkedList(&(this->array)[(*index)]);
+        linkedListItem *occupant = deepHash::findLastInLinkedList((this->array)[(*index)]);
         item->key = *key;
         item->value = *value;
         deepHash::linkItemToOccupant(item, occupant);
@@ -38,7 +39,7 @@ void deepHash::addToEmptyIndex(linkedListItem *item, std::string *key, std::stri
     (*item).key = *key;
     (*item).value = *value;
     (*item).next = nullptr;
-    this->array[(*index)] = *item;
+    this->array[(*index)] = item;
     std::cout << "Added to index " << *index << std::endl;
 }
 
@@ -74,7 +75,7 @@ int deepHash::sumOfString(std::string key) {
 }
 
 linkedListItem *deepHash::findAtIndex(int index) {
-    return &this->array[index];
+    return this->array[index];
 }
 
 linkedListItem *deepHash::findItemWithValue(int index, std::string value) {
@@ -94,4 +95,18 @@ linkedListItem *deepHash::returnItem(std::string *key, std::string *value) {
 int deepHash::calcIndex(int stringSum) {
     int size = this->array.size();
     return (stringSum % size);
+}
+
+bool deepHash::resize() {
+    bool didResize = false;
+    // copy contents into arrayCopy
+    // null the array
+    // resize the array
+    // place contents back into new Array
+    return didResize;
+}
+
+bool deepHash::checkToResize() {
+
+    return false;
 }
