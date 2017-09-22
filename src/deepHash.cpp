@@ -98,10 +98,13 @@ int deepHash::calcIndex(int stringSum) {
     return (stringSum % size);
 }
 
-void deepHash::resize() {
+void deepHash::resize(int newSize) {
+    // copy the existing contents
     deepHash::transferArrayToCopy();
     // resize the array
-    // place contents back into new Array
+    this->array.resize(newSize);
+    // copy contents back into new Array
+    deepHash::transferCopyToArray();
 }
 
 bool deepHash::checkToResize() {
@@ -150,8 +153,20 @@ void deepHash::transferArrayToCopy() {
             }
             // clear the next reference for the current index
             this->array[i]->next = nullptr;
+            this->occupiedIndices = {};
         }
     }
-    this->array = {};
     // null the array
+    this->array = {};
+}
+
+void deepHash::transferCopyToArray() {
+    for (int i = 0; i < this->arrayFlatCopy.size(); i++) {
+        int sum = deepHash::sumOfString(this->arrayFlatCopy[i]->key);
+        int index = deepHash::calcIndex(sum);
+        std::string *key = &(this->arrayFlatCopy[i]->key);
+        std::string *value = &(this->arrayFlatCopy[i]->value);
+        deepHash::insertOrLink(this->arrayFlatCopy[i], &index, key, value);
+    }
+    this->arrayFlatCopy = {};
 }

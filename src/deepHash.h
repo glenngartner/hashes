@@ -29,7 +29,7 @@ public:
 
     int calcIndex(int stringSum);
 
-    void resize();
+    void resize(int newSize);
 
     int getDepthOfIndex(int index);
 
@@ -47,6 +47,8 @@ private:
     linkedListItem *findItemWithValue(int index, std::string value);
 
     void transferArrayToCopy();
+
+    void transferCopyToArray();
 
     bool checkToResize();
 

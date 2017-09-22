@@ -2,6 +2,7 @@
 <project version="4">
   <component name="BookmarkManager">
     <bookmark url="file://$PROJECT_DIR$/src/main.cpp" line="58" mnemonic="7" />
+    <bookmark url="file://$PROJECT_DIR$/src/main.cpp" />
   </component>
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
     <generated>
@@ -37,8 +38,8 @@
           <file leaf-file-name="deepHash.cpp" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/deepHash.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-428">
-                  <caret line="97" column="0" lean-forward="false" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
+                <state relative-caret-position="422">
+                  <caret line="155" column="38" lean-forward="false" selection-start-line="155" selection-start-column="38" selection-end-line="155" selection-end-column="38" />
                   <folding>
                     <element signature="e#41#62#0" expanded="true" />
                   </folding>
@@ -49,8 +50,8 @@
           <file leaf-file-name="deepHash.h" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/deepHash.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="471">
-                  <caret line="48" column="25" lean-forward="false" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="25" />
+                <state relative-caret-position="403">
+                  <caret line="50" column="23" lean-forward="true" selection-start-line="50" selection-start-column="23" selection-end-line="50" selection-end-column="23" />
                   <folding>
                     <element signature="e#41#58#0" expanded="true" />
                   </folding>
@@ -109,8 +110,8 @@
           <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="383">
-                  <caret line="61" column="5" lean-forward="true" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
+                <state relative-caret-position="366">
+                  <caret line="60" column="33" lean-forward="true" selection-start-line="60" selection-start-column="33" selection-end-line="60" selection-end-column="33" />
                   <folding>
                     <element signature="e#0#19#0" expanded="true" />
                   </folding>
@@ -158,8 +159,8 @@
         <option value="$PROJECT_DIR$/include/linkedListItem.h" />
         <option value="$PROJECT_DIR$/src/core.cpp" />
         <option value="$PROJECT_DIR$/include/core.h" />
-        <option value="$PROJECT_DIR$/src/main.cpp" />
         <option value="$PROJECT_DIR$/src/deepHash.h" />
+        <option value="$PROJECT_DIR$/src/main.cpp" />
         <option value="$PROJECT_DIR$/src/deepHash.cpp" />
       </list>
     </option>
@@ -295,7 +296,7 @@
       <workItem from="1505850640944" duration="11936000" />
       <workItem from="1505943786483" duration="2055000" />
       <workItem from="1505957314258" duration="2930000" />
-      <workItem from="1506018182840" duration="17425000" />
+      <workItem from="1506018182840" duration="19485000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <created>1504662868094</created>
@@ -381,11 +382,18 @@
       <option name="project" value="LOCAL" />
       <updated>1506049198797</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="copy array contents to temp array on resize call">
+      <created>1506052012451</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1506052012451</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95621000" />
+    <option name="totallyTimeSpent" value="97681000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -441,20 +449,25 @@
     <MESSAGE value="return deep array item when passing key value pair" />
     <MESSAGE value="copy occupied indices to vector in deepHash class" />
     <MESSAGE value="make deepHash array an array of pointers" />
-    <option name="LAST_COMMIT_MESSAGE" value="make deepHash array an array of pointers" />
+    <MESSAGE value="copy array contents to temp array on resize call" />
+    <option name="LAST_COMMIT_MESSAGE" value="copy array contents to temp array on resize call" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/src/main.cpp</url>
-          <line>52</line>
-          <option name="timeStamp" value="55" />
+          <line>60</line>
+          <option name="timeStamp" value="59" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="58" />
+      <option name="time" value="60" />
     </breakpoint-manager>
-    <watches-manager />
+    <watches-manager>
+      <configuration name="CMakeRunConfiguration">
+        <watch expression="linkedHash.array[10]" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://C:/tools/mingw64/x86_64-w64-mingw32/include/c++/bits/stl_vector.h">
@@ -884,8 +897,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/deepHash.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="471">
-          <caret line="48" column="25" lean-forward="false" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="25" />
+        <state relative-caret-position="403">
+          <caret line="50" column="23" lean-forward="true" selection-start-line="50" selection-start-column="23" selection-end-line="50" selection-end-column="23" />
           <folding>
             <element signature="e#41#58#0" expanded="true" />
           </folding>
@@ -894,8 +907,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/deepHash.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-428">
-          <caret line="97" column="0" lean-forward="false" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
+        <state relative-caret-position="422">
+          <caret line="155" column="38" lean-forward="false" selection-start-line="155" selection-start-column="38" selection-end-line="155" selection-end-column="38" />
           <folding>
             <element signature="e#41#62#0" expanded="true" />
           </folding>
@@ -904,8 +917,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="61" column="5" lean-forward="true" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
+        <state relative-caret-position="366">
+          <caret line="60" column="33" lean-forward="true" selection-start-line="60" selection-start-column="33" selection-end-line="60" selection-end-column="33" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>

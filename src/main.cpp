@@ -44,15 +44,15 @@ int main() {
         printCharAsLine('-', 45);
         stringSum = linkedHash.calcIndex(stringSum);
 
-        linkedHash.resizeForLargerIndex(&stringSum);
+//        linkedHash.resizeForLargerIndex(&stringSum);
 //        resizeForLargerIndexL(&linkedListHash, &stringSum);
         auto *item = new linkedListItem; // create an empty linked list item
         linkedHash.insertOrLink(item, &stringSum, &key, &value);
 //        insertOrLinkIntoDeepArray(&linkedListHash, &item, &stringSum, &key, &value);
-        linkedListItem *itemWithValue = linkedHash.returnItem(&key, &value);
-        if (linkedHash.getDepthOfIndex(5) > 3) {
-            linkedHash.resize();
+        if (linkedHash.getDepthOfIndex(5) > 1) {
+            linkedHash.resize(17);
         }
+        linkedListItem *itemWithValue = linkedHash.returnItem(&key, &value);
 
         // add key and value to the one-dimensional hash
         printCharAsLine('-', 45);
