@@ -169,3 +169,9 @@ void deepHash::transferCopyToArray() {
     }
     this->arrayFlatCopy = {};
 }
+
+int deepHash::indexOfItem(std::string *key, std::string *value) {
+    int sum = deepHash::sumOfString(*key);
+    int index = deepHash::calcIndex(sum);
+    return index;
+}

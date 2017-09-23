@@ -53,8 +53,33 @@ int main() {
                 puts("What value are you looking for?");
                 std::cin >> value;
                 linkedListItem *itemWithValue = linkedHash.returnItem(&key, &value);
+                printCharAsLine('-', 45);
                 puts("Found: ");
-                std::cout << itemWithValue->key << "-" << itemWithValue->value << std::endl;
+                std::cout << "[" << itemWithValue->key << "]=[" << itemWithValue->value << "]" << std::endl;
+                printCharAsLine('=', 45);
+                std::cout << "DEEPHASH index: " << linkedHash.indexOfItem(&key, &value) << std::endl;
+                if (itemWithValue->next != nullptr) {
+                    std::cout << "DEEPHASH neighbor: " << "[" << itemWithValue->next->key << "]= ["
+                              << itemWithValue->next->value << "]" << std::endl;
+                }
+                printCharAsLine('-', 45);
+                int sum = linkedHash.sumOfString(key);
+                int index = linkedHash.calcIndex(sum);
+                if (simpleHash[index] == value){
+                    std::cout << "SIMPLEHASH index: " << index << std::endl;
+                } else {
+                    int i = index;
+                    while (simpleHash[i] != value){
+                        i++;
+                    }
+                    std::cout << "SIMPLEHASH index: " << i << std::endl;
+                }
+//                for (int i = 0; i < simpleHash.size(); i++) {
+//                    if (value == simpleHash[i]) {
+//                        std::cout << "SIMPLEHASH index: " << i << std::endl;
+//                    }
+//                }
+                printCharAsLine('-', 45);
                 break;
             }
             case 'p': {

@@ -36,12 +36,14 @@ public:
     std::vector<linkedListItem *> array;
 
     std::vector<int> occupiedIndices;
+
+    int indexOfItem(std::string *key, std::string *value);
+
+    int sumOfString(std::string key);
 private:
 
     std::vector<linkedListItem *> arrayFlatCopy;
 
-
-    int sumOfString(std::string key);
 
     linkedListItem *findAtIndex(int index);
 
