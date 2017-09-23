@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/g/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/172.3968.17/bin/cmake/bin/cmake
+CMAKE_COMMAND = /Users/ggartner/Desktop/CLion.app/Contents/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /home/g/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/172.3968.17/bin/cmake/bin/cmake -E remove -f
+RM = /Users/ggartner/Desktop/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/g/workspace/cpp/hashes
+CMAKE_SOURCE_DIR = /Users/ggartner/Documents/workspace/cpp/hashes
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/g/workspace/cpp/hashes/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/ggartner/Documents/workspace/cpp/hashes/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/hashes.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/hashes.dir/flags.make
 
 CMakeFiles/hashes.dir/src/main.cpp.o: CMakeFiles/hashes.dir/flags.make
 CMakeFiles/hashes.dir/src/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/g/workspace/cpp/hashes/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/hashes.dir/src/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/hashes.dir/src/main.cpp.o -c /home/g/workspace/cpp/hashes/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ggartner/Documents/workspace/cpp/hashes/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/hashes.dir/src/main.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/hashes.dir/src/main.cpp.o -c /Users/ggartner/Documents/workspace/cpp/hashes/src/main.cpp
 
 CMakeFiles/hashes.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hashes.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/g/workspace/cpp/hashes/src/main.cpp > CMakeFiles/hashes.dir/src/main.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ggartner/Documents/workspace/cpp/hashes/src/main.cpp > CMakeFiles/hashes.dir/src/main.cpp.i
 
 CMakeFiles/hashes.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hashes.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/g/workspace/cpp/hashes/src/main.cpp -o CMakeFiles/hashes.dir/src/main.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ggartner/Documents/workspace/cpp/hashes/src/main.cpp -o CMakeFiles/hashes.dir/src/main.cpp.s
 
 CMakeFiles/hashes.dir/src/main.cpp.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/hashes.dir/src/main.cpp.o.provides.build: CMakeFiles/hashes.dir/src/m
 
 CMakeFiles/hashes.dir/src/core.cpp.o: CMakeFiles/hashes.dir/flags.make
 CMakeFiles/hashes.dir/src/core.cpp.o: ../src/core.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/g/workspace/cpp/hashes/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/hashes.dir/src/core.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/hashes.dir/src/core.cpp.o -c /home/g/workspace/cpp/hashes/src/core.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ggartner/Documents/workspace/cpp/hashes/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/hashes.dir/src/core.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/hashes.dir/src/core.cpp.o -c /Users/ggartner/Documents/workspace/cpp/hashes/src/core.cpp
 
 CMakeFiles/hashes.dir/src/core.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hashes.dir/src/core.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/g/workspace/cpp/hashes/src/core.cpp > CMakeFiles/hashes.dir/src/core.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ggartner/Documents/workspace/cpp/hashes/src/core.cpp > CMakeFiles/hashes.dir/src/core.cpp.i
 
 CMakeFiles/hashes.dir/src/core.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hashes.dir/src/core.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/g/workspace/cpp/hashes/src/core.cpp -o CMakeFiles/hashes.dir/src/core.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ggartner/Documents/workspace/cpp/hashes/src/core.cpp -o CMakeFiles/hashes.dir/src/core.cpp.s
 
 CMakeFiles/hashes.dir/src/core.cpp.o.requires:
 
@@ -107,16 +107,16 @@ CMakeFiles/hashes.dir/src/core.cpp.o.provides.build: CMakeFiles/hashes.dir/src/c
 
 CMakeFiles/hashes.dir/src/hash.cpp.o: CMakeFiles/hashes.dir/flags.make
 CMakeFiles/hashes.dir/src/hash.cpp.o: ../src/hash.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/g/workspace/cpp/hashes/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/hashes.dir/src/hash.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/hashes.dir/src/hash.cpp.o -c /home/g/workspace/cpp/hashes/src/hash.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ggartner/Documents/workspace/cpp/hashes/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/hashes.dir/src/hash.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/hashes.dir/src/hash.cpp.o -c /Users/ggartner/Documents/workspace/cpp/hashes/src/hash.cpp
 
 CMakeFiles/hashes.dir/src/hash.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hashes.dir/src/hash.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/g/workspace/cpp/hashes/src/hash.cpp > CMakeFiles/hashes.dir/src/hash.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ggartner/Documents/workspace/cpp/hashes/src/hash.cpp > CMakeFiles/hashes.dir/src/hash.cpp.i
 
 CMakeFiles/hashes.dir/src/hash.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hashes.dir/src/hash.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/g/workspace/cpp/hashes/src/hash.cpp -o CMakeFiles/hashes.dir/src/hash.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ggartner/Documents/workspace/cpp/hashes/src/hash.cpp -o CMakeFiles/hashes.dir/src/hash.cpp.s
 
 CMakeFiles/hashes.dir/src/hash.cpp.o.requires:
 
@@ -131,16 +131,16 @@ CMakeFiles/hashes.dir/src/hash.cpp.o.provides.build: CMakeFiles/hashes.dir/src/h
 
 CMakeFiles/hashes.dir/src/deepHash.cpp.o: CMakeFiles/hashes.dir/flags.make
 CMakeFiles/hashes.dir/src/deepHash.cpp.o: ../src/deepHash.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/g/workspace/cpp/hashes/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/hashes.dir/src/deepHash.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/hashes.dir/src/deepHash.cpp.o -c /home/g/workspace/cpp/hashes/src/deepHash.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ggartner/Documents/workspace/cpp/hashes/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/hashes.dir/src/deepHash.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/hashes.dir/src/deepHash.cpp.o -c /Users/ggartner/Documents/workspace/cpp/hashes/src/deepHash.cpp
 
 CMakeFiles/hashes.dir/src/deepHash.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hashes.dir/src/deepHash.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/g/workspace/cpp/hashes/src/deepHash.cpp > CMakeFiles/hashes.dir/src/deepHash.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ggartner/Documents/workspace/cpp/hashes/src/deepHash.cpp > CMakeFiles/hashes.dir/src/deepHash.cpp.i
 
 CMakeFiles/hashes.dir/src/deepHash.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hashes.dir/src/deepHash.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/g/workspace/cpp/hashes/src/deepHash.cpp -o CMakeFiles/hashes.dir/src/deepHash.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ggartner/Documents/workspace/cpp/hashes/src/deepHash.cpp -o CMakeFiles/hashes.dir/src/deepHash.cpp.s
 
 CMakeFiles/hashes.dir/src/deepHash.cpp.o.requires:
 
@@ -169,7 +169,7 @@ hashes: CMakeFiles/hashes.dir/src/hash.cpp.o
 hashes: CMakeFiles/hashes.dir/src/deepHash.cpp.o
 hashes: CMakeFiles/hashes.dir/build.make
 hashes: CMakeFiles/hashes.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/g/workspace/cpp/hashes/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable hashes"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/ggartner/Documents/workspace/cpp/hashes/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable hashes"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/hashes.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -189,6 +189,6 @@ CMakeFiles/hashes.dir/clean:
 .PHONY : CMakeFiles/hashes.dir/clean
 
 CMakeFiles/hashes.dir/depend:
-	cd /home/g/workspace/cpp/hashes/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/g/workspace/cpp/hashes /home/g/workspace/cpp/hashes /home/g/workspace/cpp/hashes/cmake-build-debug /home/g/workspace/cpp/hashes/cmake-build-debug /home/g/workspace/cpp/hashes/cmake-build-debug/CMakeFiles/hashes.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/ggartner/Documents/workspace/cpp/hashes/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/ggartner/Documents/workspace/cpp/hashes /Users/ggartner/Documents/workspace/cpp/hashes /Users/ggartner/Documents/workspace/cpp/hashes/cmake-build-debug /Users/ggartner/Documents/workspace/cpp/hashes/cmake-build-debug /Users/ggartner/Documents/workspace/cpp/hashes/cmake-build-debug/CMakeFiles/hashes.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/hashes.dir/depend
 

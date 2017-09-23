@@ -20,9 +20,9 @@ vector
 core.h
 ../include/core.h
 
-/home/g/workspace/cpp/hashes/src/core.cpp
+/Users/ggartner/Documents/workspace/cpp/hashes/src/core.cpp
 core.h
-/home/g/workspace/cpp/hashes/src/core.h
+/Users/ggartner/Documents/workspace/cpp/hashes/src/core.h
 iostream
 -
 vector
@@ -30,23 +30,23 @@ vector
 string
 -
 
-/home/g/workspace/cpp/hashes/src/deepHash.cpp
+/Users/ggartner/Documents/workspace/cpp/hashes/src/deepHash.cpp
 deepHash.h
-/home/g/workspace/cpp/hashes/src/deepHash.h
+/Users/ggartner/Documents/workspace/cpp/hashes/src/deepHash.h
 core.h
-/home/g/workspace/cpp/hashes/src/core.h
+/Users/ggartner/Documents/workspace/cpp/hashes/src/core.h
 
-/home/g/workspace/cpp/hashes/src/deepHash.h
+/Users/ggartner/Documents/workspace/cpp/hashes/src/deepHash.h
 hash.h
-/home/g/workspace/cpp/hashes/src/hash.h
+/Users/ggartner/Documents/workspace/cpp/hashes/src/hash.h
 core.h
-/home/g/workspace/cpp/hashes/src/core.h
+/Users/ggartner/Documents/workspace/cpp/hashes/src/core.h
 
-/home/g/workspace/cpp/hashes/src/hash.cpp
+/Users/ggartner/Documents/workspace/cpp/hashes/src/hash.cpp
 hash.h
-/home/g/workspace/cpp/hashes/src/hash.h
+/Users/ggartner/Documents/workspace/cpp/hashes/src/hash.h
 
-/home/g/workspace/cpp/hashes/src/main.cpp
+/Users/ggartner/Documents/workspace/cpp/hashes/src/main.cpp
 iostream
 -
 unordered_map
@@ -58,9 +58,9 @@ cstring
 vector
 -
 core.h
-/home/g/workspace/cpp/hashes/src/core.h
+/Users/ggartner/Documents/workspace/cpp/hashes/src/core.h
 hash.h
-/home/g/workspace/cpp/hashes/src/hash.h
+/Users/ggartner/Documents/workspace/cpp/hashes/src/hash.h
 deepHash.h
-/home/g/workspace/cpp/hashes/src/deepHash.h
+/Users/ggartner/Documents/workspace/cpp/hashes/src/deepHash.h
 
