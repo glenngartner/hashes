@@ -33,7 +33,7 @@ void resizeForLargerIndex(std::vector<simpleItem> *hash, int *stringSum) {
     if ((*hash).size() <= *stringSum) { // if the hash size is smaller than the new value
         (*hash).resize(*stringSum + 1); // resize the array to match the new value
 //        puts("SIMPLEHASH::Expanded Size");
-        std::cout << "SIMPLEHASH:" << std::endl << "Expanded Size to " << hash->size() << std::endl;
+        std::cout  << "Expanded Size to " << hash->size() << std::endl;
     }
 }
 

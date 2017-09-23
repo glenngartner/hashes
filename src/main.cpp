@@ -48,38 +48,52 @@ int main() {
                 break;
             }
             case 's': {
+                bool itemNotExist = false;
                 puts("What key are you looking for?");
                 std::cin >> key;
                 puts("What value are you looking for?");
                 std::cin >> value;
-                linkedListItem *itemWithValue = linkedHash.returnItem(&key, &value);
                 printCharAsLine('-', 45);
-                puts("Found: ");
-                std::cout << "[" << itemWithValue->key << "]=[" << itemWithValue->value << "]" << std::endl;
-                printCharAsLine('=', 45);
-                std::cout << "DEEPHASH index: " << linkedHash.indexOfItem(&key, &value) << std::endl;
-                if (itemWithValue->next != nullptr) {
-                    std::cout << "DEEPHASH neighbor: " << "[" << itemWithValue->next->key << "]= ["
-                              << itemWithValue->next->value << "]" << std::endl;
-                }
-                printCharAsLine('-', 45);
-                int sum = linkedHash.sumOfString(key);
-                int index = linkedHash.calcIndex(sum);
-                if (simpleHash[index].value == value && simpleHash[index].key == key){
-                    std::cout << "SIMPLEHASH index: " << index << std::endl;
-                } else {
-                    int i = index;
-                    while (simpleHash[i].value != value && simpleHash[i].key != key){
-                        i++;
+                // check if the search key and value exist
+                for (int i = 0; i < simpleHash.size(); i++) {
+                    // if they are not found
+                    if (simpleHash[i].key == key && simpleHash[i].value == value) {
+                        itemNotExist = false;
+                        break;
+                    } else {
+                        itemNotExist = true;
                     }
-                    std::cout << "SIMPLEHASH index: " << i << std::endl;
                 }
-//                for (int i = 0; i < simpleHash.size(); i++) {
-//                    if (value == simpleHash[i]) {
-//                        std::cout << "SIMPLEHASH index: " << i << std::endl;
-//                    }
-//                }
-                printCharAsLine('-', 45);
+                // if the item isn't found, alert the user
+                if (itemNotExist) {
+                    printCharAsLine('x', 45);
+                    puts("Sorry, that item doesn't exist.");
+                    printCharAsLine('x', 45);
+                    puts("");
+                } else {
+                    linkedListItem *itemWithValue = linkedHash.returnItem(&key, &value);
+                    puts("Found: ");
+                    std::cout << "[" << itemWithValue->key << "]=[" << itemWithValue->value << "]" << std::endl;
+                    printCharAsLine('=', 45);
+                    std::cout << "DEEPHASH index: " << linkedHash.indexOfItem(&key, &value) << std::endl;
+                    if (itemWithValue->next != nullptr) {
+                        std::cout << "DEEPHASH neighbor: " << "[" << itemWithValue->next->key << "]= ["
+                                  << itemWithValue->next->value << "]" << std::endl;
+                    }
+                    printCharAsLine('-', 45);
+                    int sum = linkedHash.sumOfString(key);
+                    int index = linkedHash.calcIndex(sum);
+                    if (simpleHash[index].value == value && simpleHash[index].key == key) {
+                        std::cout << "SIMPLEHASH index: " << index << std::endl;
+                    } else {
+                        int i = index;
+                        while (simpleHash[i].value != value && simpleHash[i].key != key) {
+                            i++;
+                        }
+                        std::cout << "SIMPLEHASH index: " << i << std::endl;
+                    }
+                    printCharAsLine('-', 45);
+                }
                 break;
             }
             case 'p': {
@@ -137,6 +151,7 @@ int main() {
 
                 // add key and value to the one-dimensional hash
                 printCharAsLine('-', 45);
+                std::cout << "SIMPLEHASH:" << std::endl;
                 resizeForLargerIndex(&simpleHash, &stringSum);
                 fillOneDimensionalHash(&simpleHash, &stringSum, &key, &value, true);
                 printCharAsLine('-', 45);
