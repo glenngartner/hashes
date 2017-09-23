@@ -29,7 +29,7 @@ void printCharsOfString(std::string key, int *inputValue, int *stringSum, bool p
 //    }
 //}
 
-void resizeForLargerIndex(std::vector<std::string> *hash, int *stringSum) {
+void resizeForLargerIndex(std::vector<simpleItem> *hash, int *stringSum) {
     if ((*hash).size() <= *stringSum) { // if the hash size is smaller than the new value
         (*hash).resize(*stringSum + 1); // resize the array to match the new value
 //        puts("SIMPLEHASH::Expanded Size");
@@ -45,15 +45,16 @@ void resizeForLargerIndexL(std::vector<linkedListItem> *hash, int *stringSum) {
     }
 }
 
-void fillOneDimensionalHash(std::vector<std::string> *simpleHash, int *stringSum, std::string *value,
+void fillOneDimensionalHash(std::vector<simpleItem> *simpleHash, int *stringSum, std::string *key, std::string *value,
                             bool printHashSize) {
     // if the index is occupied, iterate +1 until it is empty (ie: go to the next one)
-    while (!(*simpleHash)[(*stringSum)].empty()) {
+    while (!(*simpleHash)[(*stringSum)].value.empty()) {
         (*stringSum)++;
         resizeForLargerIndex(simpleHash, stringSum);
     }
     // write the value to the new index in the array
-    (*simpleHash)[(*stringSum)] = *value;
+    (*simpleHash)[(*stringSum)].key = *key;
+    (*simpleHash)[(*stringSum)].value = *value;
     // print the new length of the array
     std::cout << "Added at index " << *stringSum << std::endl;
 }

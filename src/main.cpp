@@ -12,7 +12,7 @@ int main() {
     bool run = true;
     std::string key;
     std::string value;
-    std::vector<std::string> simpleHash;
+    std::vector<simpleItem> simpleHash;
     std::vector<linkedListItem> linkedListHash;
     deepHash linkedHash{11};
     bool hasRunOnce = false;
@@ -65,11 +65,11 @@ int main() {
                 printCharAsLine('-', 45);
                 int sum = linkedHash.sumOfString(key);
                 int index = linkedHash.calcIndex(sum);
-                if (simpleHash[index] == value){
+                if (simpleHash[index].value == value && simpleHash[index].key == key){
                     std::cout << "SIMPLEHASH index: " << index << std::endl;
                 } else {
                     int i = index;
-                    while (simpleHash[i] != value){
+                    while (simpleHash[i].value != value && simpleHash[i].key != key){
                         i++;
                     }
                     std::cout << "SIMPLEHASH index: " << i << std::endl;
@@ -97,7 +97,7 @@ int main() {
                 std::cout << "length: " << simpleHash.size() << std::endl;
                 std::cout << "indices occupied: ";
                 for (int i = 0; i < simpleHash.size(); i++) {
-                    if (simpleHash[i] != "") {
+                    if (simpleHash[i].value != "") {
                         std::cout << i << ", ";
                     }
                 }
@@ -138,7 +138,7 @@ int main() {
                 // add key and value to the one-dimensional hash
                 printCharAsLine('-', 45);
                 resizeForLargerIndex(&simpleHash, &stringSum);
-                fillOneDimensionalHash(&simpleHash, &stringSum, &value, true);
+                fillOneDimensionalHash(&simpleHash, &stringSum, &key, &value, true);
                 printCharAsLine('-', 45);
                 break;
             }

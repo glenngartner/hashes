@@ -15,12 +15,12 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3adefefc-fd32-4f7f-a423-f5a21bd6302e" name="Default" comment="implement multi-option prompt">
+    <list default="true" id="3adefefc-fd32-4f7f-a423-f5a21bd6302e" name="Default" comment="fix simple hash returning multiple values of the same type after search">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/hashes.dir/objects.a" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/hashes.dir/objects.a" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/hashes.exe" afterPath="$PROJECT_DIR$/cmake-build-debug/hashes.exe" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/deepHash.cpp" afterPath="$PROJECT_DIR$/src/deepHash.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/deepHash.h" afterPath="$PROJECT_DIR$/src/deepHash.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/core.h" afterPath="$PROJECT_DIR$/include/core.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/core.cpp" afterPath="$PROJECT_DIR$/src/core.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main.cpp" afterPath="$PROJECT_DIR$/src/main.cpp" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -38,8 +38,8 @@
           <file leaf-file-name="deepHash.cpp" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/deepHash.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="2975">
-                  <caret line="175" column="16" lean-forward="false" selection-start-line="175" selection-start-column="16" selection-end-line="175" selection-end-column="16" />
+                <state relative-caret-position="1887">
+                  <caret line="127" column="0" lean-forward="false" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
                   <folding>
                     <element signature="e#41#62#0" expanded="true" />
                   </folding>
@@ -47,10 +47,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="deepHash.h" pinned="false" current-in-tab="true">
+          <file leaf-file-name="deepHash.h" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/deepHash.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="462">
+                <state relative-caret-position="680">
                   <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
                   <folding>
                     <element signature="e#41#58#0" expanded="true" />
@@ -79,11 +79,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="core.h" pinned="false" current-in-tab="false">
+          <file leaf-file-name="core.h" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/include/core.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="680">
-                  <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+                <state relative-caret-position="496">
+                  <caret line="31" column="21" lean-forward="false" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
                   <folding>
                     <element signature="e#41#58#0" expanded="true" />
                   </folding>
@@ -98,8 +98,8 @@
           <file leaf-file-name="core.cpp" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/core.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="595">
-                  <caret line="35" column="33" lean-forward="false" selection-start-line="35" selection-start-column="33" selection-end-line="35" selection-end-column="33" />
+                <state relative-caret-position="320">
+                  <caret line="55" column="43" lean-forward="true" selection-start-line="55" selection-start-column="43" selection-end-line="55" selection-end-column="43" />
                   <folding>
                     <element signature="e#41#58#0" expanded="true" />
                   </folding>
@@ -110,7 +110,7 @@
           <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="998">
+                <state relative-caret-position="386">
                   <caret line="148" column="0" lean-forward="false" selection-start-line="148" selection-start-column="0" selection-end-line="148" selection-end-column="0" />
                   <folding>
                     <element signature="e#0#19#0" expanded="true" />
@@ -165,10 +165,10 @@
         <option value="$PROJECT_DIR$/src/linkedListItem.h" />
         <option value="$PROJECT_DIR$/src/linkedListItem.cpp" />
         <option value="$PROJECT_DIR$/include/linkedListItem.h" />
-        <option value="$PROJECT_DIR$/src/core.cpp" />
         <option value="$PROJECT_DIR$/src/deepHash.cpp" />
-        <option value="$PROJECT_DIR$/include/core.h" />
         <option value="$PROJECT_DIR$/src/deepHash.h" />
+        <option value="$PROJECT_DIR$/include/core.h" />
+        <option value="$PROJECT_DIR$/src/core.cpp" />
         <option value="$PROJECT_DIR$/src/main.cpp" />
       </list>
     </option>
@@ -307,7 +307,7 @@
       <workItem from="1506018182840" duration="19529000" />
       <workItem from="1506107584150" duration="7981000" />
       <workItem from="1506130260295" duration="2037000" />
-      <workItem from="1506135888109" duration="218000" />
+      <workItem from="1506135888109" duration="1177000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <created>1504662868094</created>
@@ -414,11 +414,18 @@
       <option name="project" value="LOCAL" />
       <updated>1506114671473</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="fix simple hash returning multiple values of the same type after search">
+      <created>1506136157638</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1506136157638</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="107961000" />
+    <option name="totallyTimeSpent" value="108920000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -477,17 +484,14 @@
     <MESSAGE value="copy array contents to temp array on resize call" />
     <MESSAGE value="resize deep array when certain index meets certain depth" />
     <MESSAGE value="implement multi-option prompt" />
-    <option name="LAST_COMMIT_MESSAGE" value="implement multi-option prompt" />
+    <MESSAGE value="fix simple hash returning multiple values of the same type after search" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix simple hash returning multiple values of the same type after search" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="66" />
+      <option name="time" value="68" />
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="CMakeRunConfiguration">
-        <watch expression="linkedHash.array[10]" />
-      </configuration>
-    </watches-manager>
+    <watches-manager />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://C:/tools/mingw64/x86_64-w64-mingw32/include/c++/bits/stl_vector.h">
@@ -884,26 +888,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/include/linkedListItem.h" />
     <entry file="file://$PROJECT_DIR$/src/linkedListItem.cpp" />
-    <entry file="file://$PROJECT_DIR$/src/core.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="33" lean-forward="false" selection-start-line="35" selection-start-column="33" selection-end-line="35" selection-end-column="33" />
-          <folding>
-            <element signature="e#41#58#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/core.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding>
-            <element signature="e#41#58#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/tools/mingw64/x86_64-w64-mingw32/include/c++/bits/basic_string.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
@@ -914,8 +898,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/deepHash.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2975">
-          <caret line="175" column="16" lean-forward="false" selection-start-line="175" selection-start-column="16" selection-end-line="175" selection-end-column="16" />
+        <state relative-caret-position="1887">
+          <caret line="127" column="0" lean-forward="false" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
           <folding>
             <element signature="e#41#62#0" expanded="true" />
           </folding>
@@ -924,8 +908,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/deepHash.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
+        <state relative-caret-position="680">
           <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding>
+            <element signature="e#41#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/core.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="496">
+          <caret line="31" column="21" lean-forward="false" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
+          <folding>
+            <element signature="e#41#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="55" column="43" lean-forward="true" selection-start-line="55" selection-start-column="43" selection-end-line="55" selection-end-column="43" />
           <folding>
             <element signature="e#41#58#0" expanded="true" />
           </folding>
@@ -934,7 +938,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="998">
+        <state relative-caret-position="386">
           <caret line="148" column="0" lean-forward="false" selection-start-line="148" selection-start-column="0" selection-end-line="148" selection-end-column="0" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />

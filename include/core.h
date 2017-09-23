@@ -14,6 +14,11 @@ struct linkedListItem {
     linkedListItem *next = nullptr;
 };
 
+struct simpleItem {
+    std::string key = "";
+    std::string value = "";
+};
+
 bool checkForProgramClose(std::string *key, bool *run);
 
 void printCharsOfString(std::string key, int *inputValue, int *stringSum, bool printSum);
@@ -21,10 +26,10 @@ void printCharsOfString(std::string key, int *inputValue, int *stringSum, bool p
 //template<typename type, typename allocator>allocator
 //void resizeForLargerIndex(std::vector<type, allocator> *hash, int *stringSum);
 
-void resizeForLargerIndex(std::vector<std::string> *hash, int *stringSum);
+void resizeForLargerIndex(std::vector<simpleItem> *hash, int *stringSum);
 void resizeForLargerIndexL(std::vector<linkedListItem, std::allocator<linkedListItem>> *hash, int *stringSum);
 
-void fillOneDimensionalHash(std::vector<std::string> *simpleHash, int *stringSum, std::string *value,
+void fillOneDimensionalHash(std::vector<simpleItem> *simpleHash, int *stringSum, std::string *key, std::string *value,
                             bool printHashSize);
 
 void addToEmptyDeepArrayIndex(linkedListItem *item, std::vector<linkedListItem> *linkedListHash, std::string *key,
